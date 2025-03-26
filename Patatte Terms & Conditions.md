@@ -1,4 +1,4 @@
-**Patatte Terms & Conditions** 
+# **Patatte Terms & Conditions** 
 
 **Effective Date:** \[Insert Date\]
 
