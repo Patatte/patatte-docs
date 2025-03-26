@@ -1,4 +1,4 @@
-**Patatte Privacy Policy**
+# **Patatte Privacy Policy**
 
 **Effective Date:** 3/14/2025
 
