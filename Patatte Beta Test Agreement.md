@@ -1,4 +1,4 @@
-**Patatte Beta Test Agreement**
+# **Patatte Beta Test Agreement**
 
 ### **1\. Introduction**
 
