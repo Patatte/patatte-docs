@@ -1,6 +1,6 @@
 # **Patatte Terms & Conditions** 
 
-**Effective Date:** \3/14/2025
+**Effective Date:** 3/14/2025
 
 ### **1\. Introduction**
 
