@@ -12,7 +12,7 @@ The purpose of this beta test is to evaluate the functionality, performance, and
 
 ### **3\. Duration of the Beta Test**
 
-The beta test will commence on **\[Start Date\]** and conclude on **\[End Date\]**, unless extended or terminated earlier by Patatte.
+The beta tests will occur in iterations between **01/02/25** and **31/05/25** unless extended or terminated earlier by Patatte.
 
 ### **4\. Tester Responsibilities**
 
@@ -47,10 +47,6 @@ Patatte reserves the right to terminate this Agreement and revoke the Tester’s
 
 By signing below, the Tester acknowledges and agrees to the terms and conditions outlined in this Agreement.
 
-**Tester Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
- **Email Address:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
- **Signature:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
- **Date:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ---
 
