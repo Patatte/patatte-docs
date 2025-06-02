@@ -47,12 +47,12 @@ These Terms & Conditions (“Terms”) govern the access and use of the Patatte 
 
 ### **8\. Disclaimer of Warranties and Limitation of Liability**
 
-#### **8.1\. Third-Party Vendor Responsibility
+#### 8.1\. Third-Party Vendor Responsibility
 Patatte is a technology platform that facilitates food ordering and service coordination between users, institutions, and third-party catering vendors. Patatte does not itself prepare, handle, or deliver food and is not responsible for the food provided by vendors listed on the platform. Each catering vendor is solely responsible for the quality, safety, and compliance of the food they serve, including adherence to food safety regulations and hygiene practices.
 * Patatte is not liable for issues related to catering service order fulfilment errors or delivery delays.  
 * Patatte is not responsible for losses due to third-party technical failures and payment processor errors.
 
-#### **8.2\. Food Safety and Health Disclaimer
+#### 8.2\. Food Safety and Health Disclaimer
 
 By using the Patatte platform to order food, whether as an individual or as part of a corporate, educational, or community-based arrangement, you acknowledge and agree that Patatte shall not be held liable for:
 	•	Any foodborne illness, allergic reaction, or adverse health effect resulting from food ordered via the platform.
