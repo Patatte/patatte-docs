@@ -71,6 +71,73 @@ Flyway's default `baselineVersion` is `1`. On a non-empty schema without a histo
 
 > **Authentication-service discrepancy:** Authentication functionality is understood to have been merged into `user-service`, but the frozen Stage-2 root `pom.xml` still lists `authentication-service`, and that directory still has a POM. Confirm during rehearsal that the deployment pipeline does not build or deploy the obsolete standalone service. Remove the stale module separately if appropriate; do not mix an unreviewed cleanup into this migration window.
 
+### Deployment configuration packages
+
+The service configuration files are frozen alongside this roadmap:
+
+- [Patatte Stage 1 ORM Configs](./Patatte_Stage_1_ORM_Configs.zip)
+- [Patatte Stage 2 Flyway Configs](./Patatte_Stage_2_Flyway_Configs.zip)
+
+| Archive | SHA-256 |
+|---|---|
+| `Patatte_Stage_1_ORM_Configs.zip` | `B97343C05A7B9E53C54BE34F1DA1A449908784AF707812252C23AB285652715C` |
+| `Patatte_Stage_2_Flyway_Configs.zip` | `C578DF60FB14C4F2D72F4AC01DC709E97275D2EE745F9352F5D15CFA2E4D2163` |
+
+Each archive contains the supplied configuration for:
+
+- `menu-service`
+- `notification-service`
+- `order-service`
+- `patatte-gateway`
+- `payment-service`
+- `service-registry`
+- `user-service`
+
+The supplied `stuff.cmd` file is intentionally excluded because it is not an application configuration file. Apart from the schema-management settings described below, the supplied service configurations are unchanged.
+
+#### Stage 1 — ORM baseline configuration
+
+The Stage-1 package prepares the two database-owning services to apply the remaining ORM-era schema changes:
+
+| Service | Required setting |
+|---|---|
+| `order-service` | `spring.jpa.hibernate.ddl-auto=update` |
+| `user-service` | `spring.jpa.hibernate.ddl-auto=update` |
+
+All `spring.flyway.*` properties are removed from both services in Stage 1. Flyway-specific debug logging is also removed from `user-service`.
+
+The other five service configurations are byte-for-byte copies of the supplied files.
+
+#### Stage 2 — Flyway migration configuration
+
+The Stage-2 package changes schema ownership from Hibernate to Flyway:
+
+| Service | Hibernate behavior |
+|---|---|
+| `order-service` | `spring.jpa.hibernate.ddl-auto=validate` — Hibernate checks that mappings match the migrated schema but does not modify it |
+| `user-service` | `spring.jpa.hibernate.ddl-auto=none` — Hibernate performs no schema-management operation |
+
+Both services contain the following Flyway settings:
+
+```properties
+spring.flyway.enabled=true
+spring.flyway.locations=classpath:db/migration
+spring.flyway.baseline-on-migrate=true
+spring.flyway.baseline-version=1
+```
+
+`spring.flyway.enabled` must remain `true` for the Stage-2 deployment; setting it to `false` would prevent the packaged migrations from running. `baseline-on-migrate` also remains `true` for this initial adoption against the existing non-empty schemas. Any decision to disable automatic baselining after the first successful migration must be handled as a separate, reviewed post-deployment configuration change.
+
+#### Configuration promotion rule
+
+Use the same reviewed configuration archive in rehearsal and production. Do not edit a property directly on a production host. If rehearsal requires a configuration correction:
+
+1. Update the source configuration.
+2. Produce a newly versioned archive.
+3. Record its checksum.
+4. Repeat the affected rehearsal checks.
+5. Promote that exact archive to production.
+
 ---
 
 ## 2. Intake Requirements From Development
@@ -132,6 +199,11 @@ Primary risks:
 - [ ] Record the resulting Stage-2 merge SHA after conflict resolution: `[SHA]`
 - [ ] Build and retain immutable artifacts for both SHAs
 - [ ] Retain the current known-good production artifact
+- [x] Stage-1 configuration archive created: `Patatte_Stage_1_ORM_Configs.zip`
+- [x] Stage-2 configuration archive created: `Patatte_Stage_2_Flyway_Configs.zip`
+- [x] Record the SHA-256 checksum of each configuration archive
+- [ ] Verify both configuration checksums before rehearsal and production deployment
+- [ ] Confirm the rehearsal and production pipelines consume the same reviewed archives
 
 ### 4.2 Database and Flyway readiness
 
@@ -203,11 +275,11 @@ Do not assume an application rollback alone is safe after Stage 2. If a migratio
 | 1 | Freeze non-essential deployments and announce start | Infrastructure | Stakeholders notified |
 | 2 | Drain traffic / enable maintenance mode | Infrastructure | No production writes, if required |
 | 3 | Take and verify backup; record Checkpoint A | Infrastructure | Backup ID and restore evidence |
-| 4 | Deploy immutable Stage-1 artifact | Infrastructure | Artifact SHA matches approved Stage-1 merge |
+| 4 | Deploy immutable Stage-1 artifact with Stage-1 ORM configuration archive | Infrastructure | Artifact SHA and configuration checksum match the approved release |
 | 5 | Allow ORM-era schema update/startup to complete | Infrastructure + Development | All services healthy |
 | 6 | Verify Stage-1 schema and critical flows | Development + Infrastructure | Approved schema diff and smoke tests |
 | 7 | Record Checkpoint B; make explicit Stage-2 go/no-go decision | Go/no-go owner | Signed decision |
-| 8 | Deploy immutable Stage-2 Flyway-enabled artifact immediately | Infrastructure | Artifact SHA matches approved Stage-2 merge |
+| 8 | Deploy immutable Stage-2 Flyway-enabled artifact with Stage-2 configuration archive immediately | Infrastructure | Artifact SHA and configuration checksum match the approved release |
 | 9 | Observe Flyway validation and migration for every service | Infrastructure + Development | Successful logs and history rows |
 | 10 | Verify target schema, constraints, and data | Development + Infrastructure | Approved post-migration evidence |
 | 11 | Run full smoke-test checklist | Development + Infrastructure | All checks pass |
