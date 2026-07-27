@@ -73,15 +73,7 @@ Flyway's default `baselineVersion` is `1`. On a non-empty schema without a histo
 
 ### Deployment configuration packages
 
-The service configuration files are frozen alongside this roadmap:
-
-- [Patatte Stage 1 ORM Configs](./Patatte_Stage_1_ORM_Configs.zip)
-- [Patatte Stage 2 Flyway Configs](./Patatte_Stage_2_Flyway_Configs.zip)
-
-| Archive | SHA-256 |
-|---|---|
-| `Patatte_Stage_1_ORM_Configs.zip` | `B97343C05A7B9E53C54BE34F1DA1A449908784AF707812252C23AB285652715C` |
-| `Patatte_Stage_2_Flyway_Configs.zip` | `C578DF60FB14C4F2D72F4AC01DC709E97275D2EE745F9352F5D15CFA2E4D2163` |
+The service configuration packages are generated separately from this documentation repository. Store them in the restricted deployment-artifact location used by Infrastructure; do not commit environment configuration archives to this repository.
 
 Each archive contains the supplied configuration for:
 
@@ -201,7 +193,7 @@ Primary risks:
 - [ ] Retain the current known-good production artifact
 - [x] Stage-1 configuration archive created: `Patatte_Stage_1_ORM_Configs.zip`
 - [x] Stage-2 configuration archive created: `Patatte_Stage_2_Flyway_Configs.zip`
-- [x] Record the SHA-256 checksum of each configuration archive
+- [ ] Record the SHA-256 checksum of each configuration archive in restricted deployment evidence
 - [ ] Verify both configuration checksums before rehearsal and production deployment
 - [ ] Confirm the rehearsal and production pipelines consume the same reviewed archives
 
