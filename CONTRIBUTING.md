@@ -1,36 +1,32 @@
 # Contributing to Patatte documentation
 
-Documentation is part of the product. A behaviour change is not complete until the relevant guide is reviewed.
+Documentation is part of the product. A customer-visible behaviour change is not complete until the relevant guide is reviewed.
 
-## What belongs here
+## Public-content boundary
 
-This public repository contains customer-safe product explanations, getting-started guides, troubleshooting and legal documents. Do not add credentials, internal incident detail, private repository links, unreleased commitments or security-sensitive architecture.
+This repository contains customer-safe product explanations, task guides, troubleshooting and approved legal material. Do not add credentials, private repository links, internal incident detail, deployment procedures, security-sensitive architecture, customer-specific commercial terms or unreleased commitments.
 
-## Writing style
+## Required workflow
 
-- Lead with the task or outcome.
-- Use calm, direct language.
-- Explain one workflow per section.
-- Use the product's visible terms.
-- Distinguish a confirmed behaviour from a deployment-specific option.
-- Tell the reader what evidence to collect before escalation.
-- Never advise repeated payment or order submission.
+1. Link the change to a product or documentation issue.
+2. Update the relevant guide with the behaviour change.
+3. Update `SUMMARY.md` when navigation changes.
+4. Run documentation validation and inspect links.
+5. Request product and relevant engineering review.
+6. Merge through a pull request.
 
-## Change workflow
+## Maintenance cadence
 
-1. Open or reference a documentation story.
-2. Update the guide in the same workstream as the behaviour change.
-3. Test every relative link in SUMMARY.md.
-4. Ask the product owner and relevant engineering owner to review.
-5. Merge through a pull request.
-6. Record the review date on pages whose behaviour can drift.
+- Triage support learnings into task or troubleshooting guides weekly.
+- Review affected documentation in the same PR as a behaviour change.
+- Review all public pages quarterly.
+- Remove or clearly mark content that no longer reflects the product.
 
 ## Pull-request checklist
 
-- User-facing behaviour is accurate.
-- No private or security-sensitive detail is exposed.
-- Product names, roles and states use canonical terminology.
-- Screenshots are redacted and current.
-- Troubleshooting is safe and non-destructive.
-- SUMMARY.md contains any new page.
-- Internal architecture changes have a matching private ADR.
+- The page has one audience and task.
+- Product names, roles and states use current terminology.
+- Deployment-specific behaviour is identified as such.
+- Screenshots and examples contain no private customer data.
+- Troubleshooting is safe and does not encourage duplicate payment or submission.
+- Internal architecture and operational procedures remain private.

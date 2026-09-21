@@ -1,28 +1,23 @@
 # Bridge
 
-Bridge coordinates workplace meal programmes for employees, administrators and food-service partners.
+Bridge coordinates workplace meal programmes without requiring HR or administrators to manually circulate every menu or resolve every order.
 
-## Employee journey
+## Employee experience
 
-1. Sign in with the approved workplace account.
-2. Confirm the available meal window and order cut-off.
-3. Choose an eligible meal.
-4. Review any employee contribution or subsidy.
-5. Submit before the cut-off.
-6. Use order history or tracking to follow fulfilment.
+Employees see the menus, dates and contribution rules available to them, then submit before the programme cut-off. Published-menu reminders may be sent using the employee contact details configured for the programme.
 
-## Administrator journey
+## Administrator experience
 
-Workplace administrators manage eligibility, meal windows, cut-offs and operational visibility. Vendor fulfilment still happens in the vendor's operational queue.
+Authorised administrators can manage programme settings, eligibility, vendors, menus, issues, settlement information and reporting. Available controls depend on the account and role.
 
-## Important behaviour
+## Collection identification
 
-- An order submitted after a cut-off may be rejected or moved to another window.
-- Eligibility and subsidy are determined by the workplace programme.
-- The employee should not submit repeatedly if confirmation is delayed.
-- Payment, programme billing and fulfilment status are separate concerns.
+Some programmes allow an order to be placed before the final employee identity is known. The customer supplies the configured collection identifier, such as a room or reference number. Authorised staff then attribute the served order before completion when required.
 
-## Related guides
+Identifiers can be unique, shared or require manual review. Avoid displaying broad employee directories on public kiosks.
 
+## Next steps
+
+- [Bridge administration](../workflows/bridge-administration.md)
+- [Menus and publication](../workflows/menus-and-publication.md)
 - [Bridge troubleshooting](../support/bridge.md)
-- [Order statuses](../support/order-statuses.md)
