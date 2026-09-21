@@ -1,35 +1,37 @@
 # Escalating to support
 
-A complete report reduces the time needed to diagnose a problem.
+A complete report reduces diagnosis time and protects customer information.
 
 ## Include
 
-- Product: VendorOS, GO, Bridge or Gather.
-- Channel: storefront, kiosk, POS, employee portal or event link.
-- Vendor and visible site.
-- User role, without sharing credentials.
-- Order number or event reference.
-- Approximate time and time zone.
-- Expected result.
-- Actual result and exact visible message.
-- Whether payment was attempted and its safe reference.
-- Screenshot with private customer and payment data hidden.
+- Product and visible screen.
+- Channel: storefront, kiosk, POS, KDS, Bridge portal or event link.
+- Vendor, programme or event and visible site.
+- User role without credentials.
+- Order, payment or export reference.
+- Exact time and time zone.
+- Expected and actual result.
+- Exact visible error message.
+- Whether payment was attempted and the safe provider reference.
+- Redacted screenshot or short recording.
 - Steps already tried.
-- Number of affected users or orders.
+- Number of affected users, orders or sites.
+
+For reconciliation issues, also include the date range, site, channel, expected total, received total, variance and the relevant CSV export.
 
 ## Never include
 
-- Passwords or access tokens.
+- Passwords, access tokens or PINs.
 - Full card or mobile-money credentials.
-- Unredacted customer contact lists.
-- Private employee or financial information.
+- Unredacted employee or customer lists.
 - Production secrets or configuration values.
+- Customer-specific commercial terms in a public issue.
 
-## Severity guide
+## Severity
 
-- Critical: ordering or fulfilment is unavailable for an entire live site or event.
-- High: multiple valid orders, payments or staff users are affected.
-- Normal: one user or order is affected and a safe workaround exists.
-- Question: guidance, configuration or training is needed.
+- **Critical:** ordering or fulfilment is unavailable for an entire live site or event.
+- **High:** multiple valid orders, payments or staff users are affected.
+- **Normal:** one user, report or order is affected and a safe workaround exists.
+- **Question:** guidance, configuration or training is needed.
 
-Keep one support thread per incident and add new evidence to it. Duplicate reports slow down diagnosis.
+Keep one support thread per incident and add new evidence to it. Duplicate reports slow diagnosis.

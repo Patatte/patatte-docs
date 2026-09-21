@@ -1,35 +1,22 @@
 # Product overview
 
-Patatte separates customer ordering from vendor operations while keeping the order journey connected.
+Patatte connects ordering, meal-programme administration and vendor operations while keeping each user's workspace focused.
 
-| Product | Primary users | Main responsibility |
+| Product | Primary users | Responsibility |
 | --- | --- | --- |
-| VendorOS | Vendor administrators, Site Chiefs and kitchen teams | Receive, prepare, fulfil and analyse orders |
-| GO Storefront | Customers | Browse a live menu, configure items, order and track |
-| GO Kiosk | Customers at a venue | Place a self-service order without installing an app |
-| GO POS | Cashiers and approved site staff | Capture walk-in, dine-in and takeaway orders |
-| Bridge | Employees and workplace administrators | Coordinate eligible workplace meals and cut-offs |
-| Gather | Event organisers, vendors and attendees | Run temporary event and group-ordering experiences |
+| VendorOS | Vendor administrators, site supervisors and kitchen teams | Configure sites and menus, receive orders, fulfil them and review operations |
+| GO | Customers and on-site cashiers | Order through a storefront, self-service kiosk or staff POS |
+| Bridge | Employees, workplace administrators and vendors | Coordinate eligible workplace meals, menus, cut-offs and reconciliation |
+| Gather | Event organisers, vendors and attendees | Coordinate temporary event and group-ordering experiences |
 
-## How an order moves
+## Shared order journey
 
-1. A catalogue is published for a vendor and location.
-2. A customer or staff member selects an available item.
-3. Product options, price and fulfilment method are confirmed.
-4. Checkout submits the order once.
-5. The vendor receives the order in the appropriate operational queue.
+1. A menu is configured and published for the correct programme, site or event.
+2. A customer, employee or cashier selects an available item.
+3. Price, options, fulfilment and any contribution are confirmed.
+4. The order is submitted once.
+5. VendorOS routes it to the appropriate operational queue.
 6. The team prepares and fulfils it.
-7. The customer sees an appropriate status for that journey.
+7. Administrators use reports and exports to reconcile activity.
 
-GO storefront, kiosk and POS share the same commerce foundation. VendorOS remains the operational workspace for vendor administration and kitchen fulfilment.
-
-## Food and merchandise
-
-Patatte can support both food and merchandise catalogues. They can share catalogue, product, cart and checkout foundations, but they do not share one combined checkout across different owners. Food vendors own their food checkout; the organisation operating a merchandise catalogue owns its merchandise checkout.
-
-## Where to go next
-
-- Ordering or register use: [GO](go.md)
-- Kitchen and vendor operations: [VendorOS](vendoros.md)
-- Workplace meals: [Bridge](bridge.md)
-- Event ordering: [Gather](gather.md)
+GO storefront, kiosk and POS are Commerce ordering channels. Gather uses the same calm ordering principles for temporary events. VendorOS remains the operational core used by the vendor.

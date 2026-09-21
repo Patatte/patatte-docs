@@ -1,31 +1,28 @@
 # VendorOS
 
-VendorOS is the operational system for vendors. It brings together order queues, kitchen fulfilment, catalogue availability and operational reporting.
+VendorOS is the operations core for food vendors. It brings sites, menus, orders, kitchen fulfilment and reporting into one controlled workspace.
 
-## Who uses VendorOS
+## Who uses it
 
-- Vendor administrators manage the vendor across its locations.
-- Site Chiefs manage day-to-day operations at one site.
-- Kitchen staff see the food orders and actions relevant to their assigned site.
-- Cashiers primarily use GO POS and only receive the access required for their site.
+- Vendor administrators manage the business across authorised sites.
+- Site supervisors manage day-to-day operations for an assigned site.
+- Kitchen staff work from the live fulfilment queue or KDS.
+- Cashiers capture orders through GO POS and receive only the access needed at their site.
 
-Your available navigation depends on your assigned role and site.
+## Main responsibilities
 
-## Core workflow
+- Configure vendor and site information.
+- Prepare and publish menus to the right ordering context.
+- Monitor incoming orders across enabled channels.
+- Progress orders through the available fulfilment actions.
+- Control availability and respond to operational constraints.
+- Review and export operational reports.
 
-1. Confirm that you are working in the correct site.
-2. Review new and locked orders.
-3. Prepare the order using the ticket details.
-4. Move it through the available fulfilment actions.
-5. Complete handover or delivery.
-6. Review capacity and availability before accepting more demand.
+Your navigation and actions depend on your assigned role and site. If expected data is missing, confirm both before changing configuration.
 
-## Availability and capacity
+## Next steps
 
-A product can become unavailable because it was disabled, its service window closed, stock was exhausted or the site reached its fulfilment capacity. Availability should be changed at the source of the constraint rather than by repeatedly refreshing the storefront.
-
-## Related guides
-
-- [Roles and sites](roles-and-sites.md)
-- [Order statuses](../support/order-statuses.md)
+- [VendorOS daily operations](../workflows/vendoros-daily-operations.md)
+- [Menus and publication](../workflows/menus-and-publication.md)
+- [Reporting and reconciliation](../operations/reporting-and-reconciliation.md)
 - [VendorOS troubleshooting](../support/vendoros.md)
