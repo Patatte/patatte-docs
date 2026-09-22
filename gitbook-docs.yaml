@@ -6,5 +6,6 @@ site:
       key: patatte-help-centre
       title: Patatte Help Centre
       path: /
+      default: true
       content:
         directory: ./
