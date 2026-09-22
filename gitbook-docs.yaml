@@ -1,0 +1,51 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+version: 1
+
+site:
+  title: Patatte Help Centre
+  structure:
+    - type: section
+      key: section-product
+      title: Product
+      path: product
+      default: true
+      children:
+        - type: space
+          key: space-product
+          title: Product
+          path: product
+          default: true
+          content:
+            directory: ./product
+
+    - type: section
+      key: section-operations
+      title: Operations
+      path: operations
+      children:
+        - type: space
+          key: space-workflows
+          title: Workflows
+          path: workflows
+          default: true
+          content:
+            directory: ./workflows
+        - type: space
+          key: space-operations
+          title: Operations
+          path: operations
+          content:
+            directory: ./operations
+
+    - type: section
+      key: section-help
+      title: Help
+      path: help
+      children:
+        - type: space
+          key: space-support
+          title: Support
+          path: support
+          default: true
+          content:
+            directory: ./support
