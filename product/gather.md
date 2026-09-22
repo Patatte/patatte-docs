@@ -1,14 +1,13 @@
 # Gather
 
-Gather is Commerce event mode for conferences, church events and other temporary ordering experiences.
+Gather supports ordering for conferences, community gatherings and other temporary food-service experiences.
 
-Attendees use the published event link or QR code, select an enabled vendor or menu, order within the service window and keep the resulting reference for collection.
+Attendees use the event link or QR code, select from the available vendors or menus, order within the service window and keep the resulting reference for collection.
 
-Organisers configure the event context, ordering dates, vendors and payment arrangement. Vendors remain responsible for their own menu and fulfilment unless the event agreement states otherwise.
-
-An event link is specific to its event and service window. Do not reuse an expired or unrelated link.
+Each event has its own dates, ordering window and payment arrangement. Use only the link provided for the event you are attending.
 
 ## Next steps
 
-- [Gather event operations](../workflows/gather-event-operations.md)
 - [Gather troubleshooting](../support/gather.md)
+- [Order statuses](../support/order-statuses.md)
+- [Escalating to support](../support/escalation.md)
