@@ -1,14 +1,14 @@
 # Patatte Help Centre
 
-Patatte provides calm infrastructure for better-run dining experiences. This help centre explains the ordering, fulfilment and administration workflows used across VendorOS, Commerce, Bridge and Gather.
+Patatte provides calm infrastructure for better-run dining experiences. This help centre explains the public ordering and support journeys across VendorOS, GO, Bridge and Gather.
 
-## Choose what you need to do
+## Choose what you need
 
-- [Operate a vendor or site](product/vendoros.md)
-- [Take and fulfil live-venue orders](product/commerce.md)
-- [Run a workplace meal programme](product/bridge.md)
-- [Run an event ordering experience](product/gather.md)
-- [Reconcile orders and payments](operations/reporting-and-reconciliation.md)
+- [Understand Patatte's products](product/overview.md)
+- [Order through GO](product/go.md)
+- [Use a workplace meal programme](product/bridge.md)
+- [Order at an event](product/gather.md)
+- [Understand an order status](support/order-statuses.md)
 - [Troubleshoot a problem](support/README.md)
 - [Prepare a useful support request](support/escalation.md)
 
@@ -16,14 +16,15 @@ Patatte provides calm infrastructure for better-run dining experiences. This hel
 
 | Product | What it coordinates |
 | --- | --- |
-| VendorOS | Vendor administration, sites, menus, kitchen fulfilment and operational reporting |
-| Commerce | GO venue ordering through storefront, self-service kiosk and staff POS; Gather event ordering |
-| Bridge | Workplace meal programmes, eligibility, menus, cut-offs and administration |
+| VendorOS | Vendor sites, menus, kitchen fulfilment and operational visibility |
+| GO | Venue ordering through customer storefronts and self-service experiences |
+| Bridge | Workplace meal programmes, menus, ordering windows and employee participation |
+| Gather | Temporary event and group-ordering experiences |
 
-Features can vary by account, site and enabled module. When the application and this guide differ, do not repeatedly submit an order or payment. Capture the evidence in the escalation guide and contact your Patatte support channel.
+Features can vary by account, venue and enabled module. If the application and this guide differ, do not repeatedly submit an order or payment. Record the evidence and contact your Patatte support channel.
 
-## Documentation status
+## Documentation boundary
 
-This is Patatte's public, customer-safe documentation source and is ready to connect to GitBook. Private architecture, credentials, incident detail and engineering runbooks are maintained separately.
+This repository contains public, customer-safe guidance. Operator procedures, administrative controls, finance processes, engineering runbooks, credentials and customer-specific material are maintained separately.
 
-Last reviewed: 21 September 2026.
+Last reviewed: 22 September 2026.
