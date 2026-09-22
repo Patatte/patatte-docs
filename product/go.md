@@ -1,37 +1,28 @@
-# GO storefront, kiosk and POS
+# GO ordering
 
-GO is the ordering layer for live venues. It provides three channels over a shared commerce foundation.
+GO gives customers a clear way to browse, order and pay at live venues.
 
 ## Customer storefront
 
-Customers open a vendor link, browse the live catalogue, configure an item, choose fulfilment, check out and track the order.
+Open the vendor link, browse the available menu, configure an item, choose fulfilment, review the order and complete payment using an enabled method.
+
+Keep the order reference after checkout so the vendor can help if anything needs checking.
 
 ## Self-service kiosk
 
-The kiosk supports walk-up ordering without an app. A guest starts an order, selects available items, reviews the cart, provides the required details, pays using an enabled method and receives an order number.
+A self-service kiosk supports walk-up ordering without an app.
 
-If a kiosk is idle, start a new order before entering customer information. Do not continue another guest's open cart.
+1. Start a new order.
+2. Confirm that the expected venue and menu are shown.
+3. Select the available items and required options.
+4. Review the cart and fulfilment choice.
+5. Complete the enabled payment flow.
+6. Keep the order number shown at confirmation.
 
-## Staff POS
-
-GO POS is for approved site staff capturing walk-in, dine-in or takeaway orders. A cashier or Site Chief must:
-
-1. sign in with the correct staff account;
-2. confirm the assigned site;
-3. open an available register and start a shift;
-4. build the order using the shared product configuration;
-5. confirm fulfilment and payment;
-6. submit the order to the same operational queue used by other channels;
-7. end the shift when handing over the register.
-
-Kitchen staff use VendorOS KDS, not GO POS.
-
-## Shared behaviour
-
-Storefront, kiosk and POS use the same published catalogue, product configuration, pricing and availability rules for a site. A channel can present the information differently, but it must not invent a different price or sell an item that is unavailable for that same context.
+If another guest's cart is visible, cancel it safely or ask a member of staff for help. Do not continue someone else's order.
 
 ## Related guides
 
 - [GO troubleshooting](../support/go.md)
-- [Roles and sites](roles-and-sites.md)
 - [Order statuses](../support/order-statuses.md)
+- [Escalating to support](../support/escalation.md)
