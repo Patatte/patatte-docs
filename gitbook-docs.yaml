@@ -1,6 +1,4 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
-version: 1
-
 site:
   title: Patatte Help Centre
   structure:
@@ -17,7 +15,6 @@ site:
           default: true
           content:
             directory: ./product
-
     - type: section
       key: section-operations
       title: Operations
@@ -36,7 +33,6 @@ site:
           path: operations
           content:
             directory: ./operations
-
     - type: section
       key: section-help
       title: Help
