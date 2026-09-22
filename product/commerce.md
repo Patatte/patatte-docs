@@ -4,24 +4,18 @@ Commerce provides Patatte's customer and attendee ordering experiences.
 
 ## GO venue mode
 
-GO supports persistent venue ordering through:
-
-- a customer storefront;
-- a self-service kiosk;
-- a staff POS.
-
-The channels use the same site, menu, pricing and availability context. They may present the journey differently, but they must not create competing versions of the same menu.
+GO supports persistent venue ordering through customer storefronts and self-service experiences. Enabled channels use the same venue, menu, pricing and availability context.
 
 ## Gather event mode
 
-Gather supports temporary event and group-ordering experiences. The event determines the available dates, vendors, menus, payment arrangement and service windows.
+Gather supports temporary event and group-ordering experiences. Each event determines the available dates, vendors, menus, payment arrangement and service windows.
 
-## Operations remain in VendorOS
+## Behind the order
 
-Commerce captures demand. VendorOS is where vendor teams receive, prepare, serve and complete the resulting orders.
+Commerce captures the order while the vendor's authorised team coordinates preparation and fulfilment through VendorOS.
 
 ## Next steps
 
-- [GO ordering channels](../workflows/go-ordering-channels.md)
-- [Gather event operations](../workflows/gather-event-operations.md)
+- [GO ordering](go.md)
+- [Gather](gather.md)
 - [Order statuses](../support/order-statuses.md)
