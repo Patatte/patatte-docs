@@ -1,17 +1,17 @@
 # Bridge troubleshooting
 
-## An employee cannot see a meal
+## A meal is not visible
 
-Confirm the employee is using the correct workplace account, is eligible for the meal programme and is within the ordering window. Check the cut-off time before escalating.
+Confirm that you are using the correct workplace account, are eligible for the programme and are within the ordering window. Check the cut-off time before escalating.
 
-## Subsidy or amount looks wrong
+## The contribution or amount looks wrong
 
-Do not submit until the programme, meal and employee contribution are confirmed. Record the meal, displayed amount and workplace account without sharing salary or private HR information.
+Do not submit the order until the programme, meal and employee contribution are confirmed. Record the meal and displayed amount without sharing salary or private HR information.
 
 ## Order history does not update
 
-Refresh once and confirm the order reference. A payment result and an operational fulfilment status can update at different times. Do not create a replacement order until support confirms the first failed.
+Refresh once and confirm the order reference. A payment result and fulfilment status can update at different times. Do not create a replacement order until support confirms the first attempt failed.
 
-## Administrator cannot access a control
+## More help
 
-Confirm the user has the workplace administrator role. Vendor operational controls remain in VendorOS and should not be expected in an employee account.
+If the issue remains, follow the [support escalation checklist](escalation.md).
