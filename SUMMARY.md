@@ -25,7 +25,3 @@
   - [Escalating to support](support/escalation.md)
 - [Glossary](glossary.md)
 - [Contributing](CONTRIBUTING.md)
-- Legal
-  - [Privacy policy](Patatte%20Privacy%20Policy.md)
-  - [Terms and conditions](Patatte%20Terms%20%26%20Conditions.md)
-  - [Beta test agreement](Patatte%20Beta%20Test%20Agreement.md)
