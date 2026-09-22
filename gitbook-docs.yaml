@@ -1,6 +1,6 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
-  title: Patatte Help Centre
+  title: Support
   structure:
     - type: space
       key: patatte-help-centre
