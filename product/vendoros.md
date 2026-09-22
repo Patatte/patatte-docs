@@ -4,25 +4,23 @@ VendorOS is the operations core for food vendors. It brings sites, menus, orders
 
 ## Who uses it
 
-- Vendor administrators manage the business across authorised sites.
-- Site supervisors manage day-to-day operations for an assigned site.
-- Kitchen staff work from the live fulfilment queue or KDS.
-- Cashiers capture orders through GO POS and receive only the access needed at their site.
+- Vendor administrators coordinate the business across authorised sites.
+- Site supervisors support day-to-day operations for an assigned site.
+- Kitchen teams work from the live fulfilment queue or KDS.
+- Cashiers use the approved ordering tools for their site.
 
-## Main responsibilities
+Navigation and actions depend on the assigned role and site. If expected information is missing, confirm both with an authorised administrator.
 
-- Configure vendor and site information.
-- Prepare and publish menus to the right ordering context.
-- Monitor incoming orders across enabled channels.
-- Progress orders through the available fulfilment actions.
-- Control availability and respond to operational constraints.
-- Review and export operational reports.
+## What it coordinates
 
-Your navigation and actions depend on your assigned role and site. If expected data is missing, confirm both before changing configuration.
+- Vendor and site information
+- Menus and ordering availability
+- Incoming orders from enabled channels
+- Kitchen preparation and fulfilment
+- Operational reporting
 
 ## Next steps
 
-- [VendorOS daily operations](../workflows/vendoros-daily-operations.md)
-- [Menus and publication](../workflows/menus-and-publication.md)
-- [Reporting and reconciliation](../operations/reporting-and-reconciliation.md)
-- [VendorOS troubleshooting](../support/vendoros.md)
+- [Roles and sites](roles-and-sites.md)
+- [Order statuses](../support/order-statuses.md)
+- [Escalating to support](../support/escalation.md)
