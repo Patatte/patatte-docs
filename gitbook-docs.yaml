@@ -5,7 +5,7 @@ site:
     - type: space
       key: patatte-help-centre
       title: Patatte Help Centre
-      path: /
+      path: undefined
       default: true
       content:
         directory: ./
