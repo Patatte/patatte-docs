@@ -6,6 +6,13 @@
   - [Commerce: GO and Gather](product/commerce.md)
   - [GO ordering](product/go.md)
   - [Bridge](product/bridge.md)
+    - [Welcome to Bridge](product/bridge/welcome.md)
+    - [Access your workplace account](product/bridge/access.md)
+    - [View available meals](product/bridge/available-meals.md)
+    - [Place an order](product/bridge/place-an-order.md)
+    - [Contributions and cut-offs](product/bridge/contributions-and-cutoffs.md)
+    - [Track and collect](product/bridge/track-and-collect.md)
+    - [Troubleshooting](product/bridge/troubleshooting.md)
   - [Gather](product/gather.md)
   - [Roles and sites](product/roles-and-sites.md)
 - [Troubleshooting](support/README.md)
@@ -15,3 +22,4 @@
   - [Gather](support/gather.md)
   - [Escalating to support](support/escalation.md)
 - [Glossary](glossary.md)
+
